@@ -1,4 +1,4 @@
-# Agbiome
+# AgBiome
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,14 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Agbiome is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/agbiome
+AgBiome was an agricultural biotechnology company in Research Triangle Park, Durham, North Carolina.
+Founded in 2012, it built the GENESIS discovery platform — over 100,000 fully sequenced plant-associated
+microbial strains screened for insect, disease and nematode control — and commercialized the Howler and
+Theia biofungicides. The company wound down across 2023-2024: a North Carolina WARN notice covering all
+123 employees in late 2023, the sale of Howler and Theia to Certis Biologicals in March 2024, and the sale
+of its microbial platform assets to Ginkgo Bioworks in April 2024.
+
+AgBiome never published a developer program, public API, SDK, or machine-readable specification, and
+agbiome.com no longer serves the company site. This profile is retained as a historical record; see
+`well-known/agbiome-well-known.yml` for the full contract-discovery probe and `x-coverage` in `apis.yml`
+for why it is thin.

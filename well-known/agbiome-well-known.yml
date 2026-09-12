@@ -1,0 +1,221 @@
+generated: '2026-09-12'
+method: probed
+source: https://agbiome.com/
+name: AgBiome well-known + contract discovery probe
+description: >-
+  Negative probe record for AgBiome. AgBiome Inc. wound down over 2023-2024: it filed a
+  North Carolina WARN notice in late 2023 covering its entire staff of 123, sold the
+  Howler and Theia biofungicides to Certis Biologicals in March 2024, and sold its
+  microbial platform assets (115,000+ sequenced strains, 500M+ gene sequences and the
+  development pipeline) to Ginkgo Bioworks in April 2024. The company domain agbiome.com
+  still resolves (Cloudflare nameservers, Google Workspace MX) but no longer serves the
+  company site: it answers from a Nexcess shared-hosting origin (209.126.25.32) whose TLS
+  certificate is issued to CN=nxcli.net and does not match the hostname, and every path
+  returns either the 3,267-byte Nexcess "coming soon" placeholder (root), a 199-byte
+  Apache 403 (every /.well-known/ path) or a 196-byte Apache 404. NOTHING here is a
+  document. No WellKnown, SecurityTxt, AgentCard, LLMsTxt or OpenAPI pointer is emitted
+  from this probe, and none should ever be emitted from it in a later round.
+
+host_status:
+  host: agbiome.com
+  controlled_by_provider: unknown
+  disposition: placeholder
+  nameservers:
+  - jobs.ns.cloudflare.com
+  - lisa.ns.cloudflare.com
+  a_records:
+  - 209.126.25.32
+  mx: google-workspace
+  tls_certificate_subject: CN=nxcli.net
+  tls_hostname_match: false
+  note: >-
+    curl exits 60 (SSL peer certificate mismatch) without -k. The root page is the stock
+    Nexcess hosting placeholder (<title>Nexcess</title>), not an AgBiome page. Last Wayback
+    capture carrying real AgBiome content is 2023; captures from 2025-08 onward are the
+    ~2KB placeholder.
+
+hit_count: 0
+path_echo_control: passed
+soft_200_control:
+  path: /.well-known/agbiome-negative-control-7f3ab91c.json
+  status: 403
+  bytes: 199
+  note: >-
+    The control path returns the same 403 as every real /.well-known/ path, so this host is
+    not a path-echoing or catch-all 200 responder. Every miss below is a genuine miss.
+
+hosts:
+- host: https://agbiome.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+  - path: /.well-known/ucp.json
+    status: 403
+    file: null
+  - path: /.well-known/acp.json
+    status: 403
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 403
+    file: null
+  - path: /.well-known/apis.json
+    status: 403
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+- host: https://www.agbiome.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+  - path: /.well-known/ucp.json
+    status: 403
+    file: null
+  - path: /.well-known/acp.json
+    status: 403
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 403
+    file: null
+  - path: /.well-known/apis.json
+    status: 403
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+- host: https://portal.agbiome.com
+  documents:
+  - path: /
+    status: 525
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 525
+    file: null
+  - path: /openapi.json
+    status: 525
+    file: null
+  - path: /llms.txt
+    status: 525
+    file: null
+- host: https://blog.agbiome.com
+  documents:
+  - path: /
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /openapi.json
+    status: 403
+    file: null
+  - path: /llms.txt
+    status: 403
+    file: null
+
+contract_discovery:
+  note: >-
+    STEP 0b run in full against every host the record knows. No OpenAPI, Swagger, GraphQL,
+    MCP, AsyncAPI, OGC or A2A surface exists on any of them.
+  rest_openapi:
+  - {url: 'https://agbiome.com/openapi.json', status: 404}
+  - {url: 'https://agbiome.com/openapi.yaml', status: 404}
+  - {url: 'https://agbiome.com/swagger.json', status: 404}
+  - {url: 'https://agbiome.com/api-docs', status: 404}
+  - {url: 'https://agbiome.com/docs', status: 404}
+  graphql:
+  - {url: 'https://agbiome.com/graphql', status: 403, note: 'nginx/Apache 403, no GraphQL endpoint'}
+  mcp:
+    probed: false
+    note: No MCP endpoint is documented or advertised anywhere for AgBiome.
+  ogc:
+    probed: false
+    note: >-
+      No evidence points at an OGC surface — AgBiome published no WMS/WFS/WCS/WMTS/CSW or
+      "OGC API" reference. Blind path probing is explicitly out of bounds.
+  a2a:
+  - {url: 'https://agbiome.com/.well-known/agent-card.json', status: 403}
+  - {url: 'https://agbiome.com/.well-known/agent.json', status: 403}
+  - {url: 'https://www.agbiome.com/.well-known/agent-card.json', status: 403}
+  - {url: 'https://www.agbiome.com/.well-known/agent.json', status: 403}
+  llms_txt:
+  - {url: 'https://agbiome.com/llms.txt', status: 404}
+  robots_sitemap:
+  - {url: 'https://agbiome.com/robots.txt', status: 404}
+  - {url: 'https://agbiome.com/sitemap.xml', status: 404}
+  dns:
+    nxdomain:
+    - api.agbiome.com
+    - docs.agbiome.com
+    - developer.agbiome.com
+    - app.agbiome.com
+    - status.agbiome.com
+    - data.agbiome.com
+    - genesis.agbiome.com
+    resolving:
+    - {host: portal.agbiome.com, note: 'Cloudflare (172.67.129.159, 104.21.1.162); origin dead, HTTP 525'}
+    - {host: blog.agbiome.com, note: 'HubSpot CMS CNAME (group29.sites.hubspot.net); unclaimed, HTTP 403 error code 1034'}
+  github:
+    url: https://github.com/AgBiome
+    status: 200
+    public_repos: 1
+    note: >-
+      A GitHub organization named AgBiome exists (created 2015-06-24) but carries no
+      description, no public members, no linked website and exactly one repository —
+      vpc-ya-later, a FORK of a third-party multi-cloud teardown script, last pushed
+      2022-07-19. There is no first-party signal tying it to AgBiome Inc. beyond the name,
+      and it publishes no API artifact, so NO GitHubOrganization pointer is emitted.
+  archive:
+    note: >-
+      A Wayback CDX sweep of agbiome.com* returned no /api, /developer, /docs, /swagger,
+      /graphql or /sdk path in any capture from 2014 to 2026. AgBiome never published a
+      developer program.
