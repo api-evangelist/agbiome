@@ -64,14 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AgBiome was an agricultural biotechnology company in Research Triangle Park, Durham, North Carolina.
-Founded in 2012, it built the GENESIS discovery platform — over 100,000 fully sequenced plant-associated
-microbial strains screened for insect, disease and nematode control — and commercialized the Howler and
-Theia biofungicides. The company wound down across 2023-2024: a North Carolina WARN notice covering all
-123 employees in late 2023, the sale of Howler and Theia to Certis Biologicals in March 2024, and the sale
-of its microbial platform assets to Ginkgo Bioworks in April 2024.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-AgBiome never published a developer program, public API, SDK, or machine-readable specification, and
-agbiome.com no longer serves the company site. This profile is retained as a historical record; see
-`well-known/agbiome-well-known.yml` for the full contract-discovery probe and `x-coverage` in `apis.yml`
-for why it is thin.
+AgBiome was an agricultural biotechnology company headquartered in Research Triangle Park, Durham, North Carolina. Founded in 2012 by Scott Uknes, Eric Ward, Jeff Dangl, John Ryals and Paul Schulze-Lefert, it built the proprietary GENESIS discovery platform — a collection of more than 100,000 fully sequenced, isolated plant-associated microbial strains and hundreds of millions of gene sequences, screened with high-throughput assays for insect, disease and nematode control — and turned it into crop-protection biologicals. It commercialized the Howler and Theia biofungicides and had a third, Esendo, before the EPA, and it spun out the genome-editing venture LifeEDIT Therapeutics in October 2020 (acquired by ElevateBio in October 2021). Backed by Syngenta, Novozymes, Monsanto, ARCH Venture Partners, Polaris, the Bill & Melinda Gates Foundation, Pontifax and UTIMCO, the company nonetheless failed to raise further capital: it filed a North Carolina WARN notice in late 2023 covering its entire staff of 123, sold Howler and Theia to Certis Biologicals (a Mitsui & Co. subsidiary) in March 2024, and sold its platform assets to Ginkgo Bioworks in April 2024 for roughly $18.2 million in stock. AgBiome never published a developer program, public API, SDK, or machine-readable specification, and agbiome.com no longer serves the company site — it answers from a Nexcess shared-hosting placeholder under a certificate issued to CN=nxcli.net. This profile is retained as a historical record; there is no API surface to enrich.
+
+**Areas:** Company · Defunct · Agriculture · AgTech · Biotechnology · Microbiology · Crop Protection · Biologicals · Life Sciences · Research
+
+## AgBiome on APIs.io (historical record)
+
+Everything profiled for AgBiome is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/agbiome/](https://apis.io/providers/agbiome/)** — or go straight to one of the APIs or properties below.
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AgBiome: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/agbiome/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
